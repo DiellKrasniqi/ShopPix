@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid">
+   
+    <a class="navbar-brand" href="#">
+      <img src="images/Screenshot 2025-05-17 125346.png" alt="Shopix" width="120">
+    </a>
+
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Shfaq menunë">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+          <a class="nav-link active" href="Home.html">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+
+   
+        <li class="nav-item">
+          <a class="nav-link" href="Produkte.html">
+            <i class="fa-solid fa-boxes-stacked"></i> Produktet
+          </a>
+        </li>
+
+      
+        <li class="nav-item">
+          <a class="nav-link" href="Person.html">
+            <i class="fa-solid fa-user"></i> Përdoruesi
+          </a>
+        </li>
+
+      
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">
+            <i class="fa-solid fa-circle-info"></i> Rreth Nesh
+          </a>
+        </li>
+      </ul>
+
+    
+      <form class="d-flex me-3">
+        <input class="form-control search-input" type="search" placeholder="Kërko..." aria-label="Kërko">
+      </form>
+
+      <div class="d-flex gap-2">
+        <a href="WishList.html" class="btn btn-outline-secondary" title="Të Ruajturat">
+          <i class="fa-regular fa-bookmark"></i>
+        </a>
+        <a href="Login.html" class="btn btn-outline-secondary">🔒 Hyr</a>
+        <a href="Buy.html" class="btn btn-orange">🛒 Shporta</a>
+      </div>
+    </div>
+  </div>
+</nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="payment-options">
+    <button class="payment-button active" data-payment="paypal">PayPal</button>
+    <button class="payment-button" data-payment="raiffeisen">Raiffeisen</button>
+    <button class="payment-button" data-payment="card">Kartë</button>
+  </div>
+
+  <div class="form-container animate__animated animate__fadeIn">
+    <form id="checkout-form">
+      <label for="fullName">Emri i Plotë:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Emri Juaj" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email@shembull.com" required>
+
+      <label for="address">Adresa:</label>
+      <input type="text" id="address" name="address" placeholder="Adresa juaj e dërgimit" required>
+
+      <label for="phone">Telefoni:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+38344012345" required>
+
+      <div id="paypal-section" class="payment-section">
+        <label for="paypal-email">Email PayPal:</label>
+        <input type="email" id="paypal-email" name="paypalEmail" placeholder="Email PayPal">
+      </div>
+
+      <div id="raiffeisen-section" class="payment-section hidden">
+        <label for="card-name">Emri në Kartë:</label>
+        <input type="text" id="card-name" name="cardName" placeholder="Emri sipas kartës">
+
+        <label for="card-number">Numri i Kartës:</label>
+        <input type="text" id="card-number" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+        <div class="card-row">
+          <div>
+            <label for="exp-date">Data e Skadencës:</label>
+            <input type="month" id="exp-date" name="expiryDate">
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3">
+          </div>
+        </div>
+      </div>
+
+      <div id="card-section" class="payment-section hidden">
+        <label for="other-name">Emri në Kartë:</label>
+        <input type="text" id="other-name" name="otherName" placeholder="Emri sipas kartës">
+
+        <label for="other-number">Numri i Kartës:</label>
+        <input type="text" id="other-number" name="otherNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+        <div class="card-row">
+          <div>
+            <label for="other-exp-date">Data e Skadencës:</label>
+            <input type="month" id="other-exp-date" name="otherExpiry">
+          </div>
+          <div>
+            <label for="other-cvv">CVV:</label>
+            <input type="text" id="other-cvv" name="otherCvv" placeholder="CVV" maxlength="3">
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Paguaj Tani</button>
+    </form>
+  </div>
+
+<br><br><br><br>
+      <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+          <div class="row align-items-center">
+      
+          
+            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+              <span class="h4 fw-bold">Shop<span style="color: orangered;">IX</span></span>
+              <br>
+              <br>
+              <p>Dyqani juaj online për produktet më të mira. Transport i shpejtë dhe shërbim cilësor.</p>
+            </div>
+      
+          
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="Home.html" class="text-light text-decoration-none footer-link">Home</a></li>
+                <li><a href="Produkte.html" class="text-light text-decoration-none footer-link">Produkte</a></li>
+                <li><a href="About.html" class="text-light text-decoration-none footer-link">Rreth Nesh</a></li>
+                <li><a href="Contact.html" class="text-light text-decoration-none footer-link">Kontakt</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h5>Kontakti</h5>
+              <p><strong>Adresa:</strong> Rruga Kryesore 123, Qyteti</p>
+              <p><strong>Telefon:</strong> +383 44 123 456</p>
+              <p><strong>Email:</strong> info@dyqan.com</p>
+            </div>
+      
+           
+            <div class="col-md-2 text-center text-md-start">
+              <h5>Na ndiqni</h5>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light fs-4"><i class="bi bi-youtube"></i></a>
+            </div>
+      
+          </div>
+          <hr class="mt-4 border-light" />
+          <p class="text-center mb-0">&copy; 2025 Shopix. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+      </footer>
+      <script>
+        window.addEventListener('scroll', function () {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 10) {
+            navbar.classList.add('sticky-navbar');
+          } else {
+            navbar.classList.remove('sticky-navbar');
+          }
+        });
+        //slideri me images
+    const buttons = document.querySelectorAll('.payment-button');
+    const sections = {
+      paypal: document.getElementById('paypal-section'),
+      raiffeisen: document.getElementById('raiffeisen-section'),
+      card: document.getElementById('card-section')
+    };
+
+    function updateSection(payment) {
+      for (let key in sections) {
+        if (sections[key]) {
+          sections[key].classList.add('hidden');
+        }
+      }
+      if (sections[payment]) {
+        sections[payment].classList.remove('hidden');
+      }
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateSection(btn.dataset.payment);
+      });
+    });
+
+    updateSection('paypal');
+
+  // navbari me ardh posht
+  document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop === 0) {
+      // Në krye, heq klasat fixed dhe hidden - navbar statik
+      navbar.classList.remove("navbar-fixed", "navbar-hidden");
+    } else if (scrollTop > lastScrollTop) {
+      // Scroll poshtë - fsheh navbar me animacion
+      navbar.classList.add("navbar-fixed", "navbar-hidden");
+    } else {
+      // Scroll lart - shfaq navbar me animacion
+      navbar.classList.add("navbar-fixed");
+      navbar.classList.remove("navbar-hidden");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+});
+
+
+      </script>
+</body>
+</html>

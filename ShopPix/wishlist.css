@@ -1,0 +1,194 @@
+@import url(Common.css);
+.wishlist-section {
+  background: #f9f9f9;
+}
+
+.product-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 3em;
+}
+
+.price {
+  font-size: 1.15rem;
+  color: #007bff;
+  font-weight: 700;
+}
+
+.btn-outline-danger {
+  transition: background-color 0.25s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(220, 53, 69, 0.15);
+}
+
+.wishlist-stats {
+  background: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover i {
+  transform: rotate(10deg);
+}
+.go-cart-btn {
+  background-color: #f76c0f;        
+  color: #ffffff;                   
+  border: none;
+  border-radius: 8px;               
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;       
+}
+
+.go-cart-btn:hover {
+  background-color: #e05b0e;        
+  transform: translateY(-2px);      
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+  filter: brightness(0.9);         
+}
+
+
+.motivational-banner {
+  background-color: #fff3e0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.motivational-banner h2 {
+  color: #f76c0f;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.motivational-banner p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.wishlist-actions {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #f76c0f;
+  color: white;
+  border-color: #f76c0f;
+}
+
+.recent-saves,
+.related-products {
+  background-color: #fdfdfd;
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+}
+
+.recent-saves h3,
+.related-products h3 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wishlist-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.about-full-bg {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('images/shop2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInHero 2s ease-in;
+  }
+  
+  .about-overlay {
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+  }
+  
+  .about-overlay h2 {
+    font-size: 2.5rem;
+    color: #f76c0f;
+    margin-bottom: 10px;
+  }
+  
+  .about-overlay p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+

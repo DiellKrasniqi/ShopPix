@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="produkte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/Screenshot 2025-05-17 125346.png" alt="Shopix" width="120">
+    </a>
+
+    <!-- Butoni për ekranet e vogla -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Shfaq menunë">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Përmbajtja e navbar-it -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link active" href="Home.html">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+
+        <!-- Home Product -->
+        <li class="nav-item">
+          <a class="nav-link" href="Produkte.html">
+            <i class="fa-solid fa-boxes-stacked"></i> Produktet
+          </a>
+        </li>
+
+        <!-- User -->
+        <li class="nav-item">
+          <a class="nav-link" href="Person.html">
+            <i class="fa-solid fa-user"></i> Përdoruesi
+          </a>
+        </li>
+
+        <!-- About -->
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">
+            <i class="fa-solid fa-circle-info"></i> Rreth Nesh
+          </a>
+        </li>
+      </ul>
+
+      <!-- Search + Buttons -->
+      <form class="d-flex me-3">
+        <input class="form-control search-input" type="search" placeholder="Kërko..." aria-label="Kërko">
+      </form>
+
+      <div class="d-flex gap-2">
+        <a href="WishList.html" class="btn btn-outline-secondary" title="Të Ruajturat">
+          <i class="fa-regular fa-bookmark"></i>
+        </a>
+        <a href="Login.html" class="btn btn-outline-secondary">🔒 Hyr</a>
+        <a href="Buy.html" class="btn btn-orange">🛒 Shporta</a>
+      </div>
+    </div>
+  </div>
+</nav>
+      
+     <div class="category-bar d-flex justify-content-center flex-wrap px-4 py-2 shadow-sm">
+    <div class="category-item" style="--i:0;" onclick="changeCategory('Kozmetikë')">Kozmetikë</div>
+    <div class="category-item" style="--i:1;" onclick="changeCategory('Aksesorë')">Aksesorë</div>
+    <div class="category-item" style="--i:2;" onclick="changeCategory('Veshje')">Veshje</div>
+    <div class="category-item" style="--i:3;" onclick="changeCategory('Mobilie')">Mobilie</div>
+    <div class="category-item" style="--i:4;" onclick="changeCategory('Puma')">Puma</div>
+    <div class="category-item" style="--i:5;" onclick="changeCategory('Sport')">Sport</div>
+    <div class="category-item" style="--i:6;" onclick="changeCategory('Teknologji')">Teknologji</div>
+    <div class="category-item" style="--i:7;" onclick="changeCategory('Fëmijë')">Fëmijë</div>
+    <div class="category-item" style="--i:8;" onclick="changeCategory('Librari')">Librari</div>
+    <div class="category-item" style="--i:9;" onclick="changeCategory('Vegla Pune')">Vegla Pune</div>
+    <div class="category-item" style="--i:10;" onclick="changeCategory('Auto')">Auto</div>
+    <div class="category-item" style="--i:11;" onclick="changeCategory('Shëndet')">Shëndet</div>
+   
+</div>
+
+      <section class="products-section container-fluid py-5">
+        <div class="row gx-5 align-items-stretch">
+         
+          <!-- Produktet -->
+          <div class="col-lg-10 col-md-9">
+            <div class="row gy-4">
+              <!-- Produkt 1 -->
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Çaj Red Berries">
+                  <div class="card-body">
+                    <h6 class="card-title">Çaj Ronnefeldt Red Berries Teavelope, 62.5gr</h6>
+                    <p class="card-text text-muted">Dyqani CROWN</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">7.20 €</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Produkt me zbritje 1 -->
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Sofa Gray Leather,size: 1.5x3m , <br> 60 kg</h6>
+                    <p class="card-text text-muted">Dyqani Qio Berto</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">70.99 €</span>
+                      <span class="old-price">90.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Produkt 2 -->
+              
+      
+              <!-- Produkt me zbritje 2 -->
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Nike Hoodie Therma-FIT M (Black), <br> size xl</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Shto më shumë produkte sipas nevojës -->
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-18%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Laptop Dell Inspiron 15, i5, 8GB RAM, 512GB SSD</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">160.99 €</span>
+                      <span class="old-price">200.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-18%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Nivea Men Shaving Foam, <br> 200ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">10.99 €</span>
+                      <span class="old-price">14.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Karrige Gaming Drift DR85, <br> e zezë e kuqe</h6>
+                    <p class="card-text text-muted">Dyqani Qio Berto</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">210.00€</span>
+                      <span class="old-price">180.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Blender Philips HR2221/40, 700W, <br> 1.5L</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Kozmetikë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/eye.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Nike Air Max 270 React <br> Black/Red</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">HP Pavilion 15.6", Ryzen 5, 8GB RAM, <br> 512GB SSD</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Aksesorë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/ring.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Veshje">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/hodd.png" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Mobilie">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/sofa.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Sport">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/cr7.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Teknologji">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="iimages/log.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div> <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Fëmijë">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/kids.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Librari">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/book.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Vegla Pune">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/shtrafsi.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Auto">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/audi.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Puma">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/nikeshoe.jpg" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div><div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3" data-category="Shëndet">
+                <div class="card product-card position-relative animate__animated animate__fadeInUp">
+                  <div class="discount-badge">-8%</div>
+                  <img src="images/heslth.webp" class="card-img-top product-image" alt="Parfum Lattafa">
+                  <div class="card-body">
+                    <h6 class="card-title">Eau De Parfum Lattafa Pride Art Of Nature II, 100 ml</h6>
+                    <p class="card-text text-muted">Dyqani GjirafaMall Fragrances</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price">59.99 €</span>
+                      <span class="old-price">64.95€</span>
+                    </div>
+                    <small class="text-success">📦 Transporti brenda 24 orëve</small>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
+             
+      
+            </div>
+          
+          </div>
+          
+
+        </div>
+      </section>
+      
+      
+      <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+          <div class="row align-items-center">
+      
+            <!-- Vetem span me emrin e dyqanit -->
+            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+              <span class="h4 fw-bold">Shop<span style="color: orangered;">IX</span></span>
+              <br>
+              <br>
+              <p>Dyqani juaj online për produktet më të mira. Transport i shpejtë dhe shërbim cilësor.</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="Home.html" class="text-light text-decoration-none footer-link">Home</a></li>
+                <li><a href="Produkte.html" class="text-light text-decoration-none footer-link">Produkte</a></li>
+                <li><a href="About.html" class="text-light text-decoration-none footer-link">Rreth Nesh</a></li>
+                <li><a href="Contact.html" class="text-light text-decoration-none footer-link">Kontakt</a></li>
+              </ul>
+            </div>
+      
+            <!-- Kontakt -->
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h5>Kontakti</h5>
+              <p><strong>Adresa:</strong> Rruga Kryesore 123, Qyteti</p>
+              <p><strong>Telefon:</strong> +383 44 123 456</p>
+              <p><strong>Email:</strong> info@dyqan.com</p>
+            </div>
+      
+            <!-- Social Media -->
+            <div class="col-md-2 text-center text-md-start">
+              <h5>Na ndiqni</h5>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light fs-4"><i class="bi bi-youtube"></i></a>
+            </div>
+      
+          </div>
+          <hr class="mt-4 border-light" />
+          <p class="text-center mb-0">&copy; 2025 Shopix. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+      </footer>
+</body>
+<script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('sticky-navbar');
+      } else {
+        navbar.classList.remove('sticky-navbar');
+      }
+    });
+    //next page
+    function changeCategory(category) {
+  const allProducts = document.querySelectorAll('[data-category]');
+  allProducts.forEach(card => {
+    if (card.getAttribute('data-category') === category || category === 'All') {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+    
+
+// navbari me ardh posht
+document.addEventListener("DOMContentLoaded", function () {
+const navbar = document.querySelector(".navbar");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop === 0) {
+  // Në krye, heq klasat fixed dhe hidden - navbar statik
+  navbar.classList.remove("navbar-fixed", "navbar-hidden");
+} else if (scrollTop > lastScrollTop) {
+  // Scroll poshtë - fsheh navbar me animacion
+  navbar.classList.add("navbar-fixed", "navbar-hidden");
+} else {
+  // Scroll lart - shfaq navbar me animacion
+  navbar.classList.add("navbar-fixed");
+  navbar.classList.remove("navbar-hidden");
+}
+
+lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+});
+
+
+  </script>
+</html>

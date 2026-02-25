@@ -1,0 +1,93 @@
+@import url(Common.css);
+ .payment-options {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .payment-button {
+      padding: 10px 20px;
+      border: 2px solid #ff6600;
+      background: white;
+      color: #ff6600;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .payment-button.active,
+    .payment-button:hover {
+      background: #ff6600;
+      color: white;
+    }
+
+    .form-container {
+      background: white;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #ffbb80;
+      box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #cc5200;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="month"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ffbb80;
+      border-radius: 5px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+
+    .card-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .card-row div {
+      flex: 1;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 15px;
+      }
+      label {
+        margin-top: 10px;
+      }
+    }

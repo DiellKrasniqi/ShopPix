@@ -1,0 +1,218 @@
+@import url(Common.css);
+.about-full-bg {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('images/shop2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInHero 2s ease-in;
+  }
+  
+  .about-overlay {
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+  }
+  
+  .about-overlay h2 {
+    font-size: 2.5rem;
+    color: #f76c0f;
+    margin-bottom: 10px;
+  }
+  
+  .about-overlay p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  .hero-section {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/about-hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+.content {
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 60px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.section:hover {
+  transform: translateY(-5px);
+}
+.section h2 {
+  color: #f76c0f;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.highlight-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.box {
+  background: linear-gradient(to bottom right, #fff, #fdf2e9);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+.box h3 {
+  color: #f76c0f;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.product-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/shop3.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.product-section .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 60px;
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.product-title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 60px;
+  color: #ff9e0d;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+.product-card h3 {
+  color: #ffcc70;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f2f2f2;
+}
+/* ok */
+.sales-stats-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+              url('https://images.unsplash.com/photo-1581093588401-08c84f115f2b');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+  color: white;
+}
+
+.stats-overlay {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.stats-title {
+  font-size: 3rem;
+  color: #ff9e0d;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-box h3 {
+  font-size: 1.4rem;
+  color: #fcd285;
+  margin-bottom: 15px;
+}
+
+.stat-box .counter {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+

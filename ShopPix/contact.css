@@ -1,0 +1,62 @@
+@import url(Common.css);
+.contact-section {
+    min-height: 100vh;
+    background: linear-gradient(to right, #fdfdfd, #fff);
+    padding: 4rem 1rem;
+  }
+  
+  .contact-card {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid #eaeaea;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  }
+  
+  .input-animated {
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-animated:focus {
+    border-color: #ff6f00;
+    box-shadow: 0 0 0 4px rgba(255, 111, 0, 0.15);
+    outline: none;
+    background-color: #fff;
+  }
+  
+  textarea.input-animated {
+    border-radius: 20px;
+    resize: none;
+  }
+  
+  .btn-orange {
+    color: #ff6f00;
+    border: 2px solid #ff6f00;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px 24px;
+    transition: all 0.4s ease;
+  }
+  
+  .btn-orange:hover {
+    background-color: #ff6f00;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(255, 111, 0, 0.4);
+  }
+  
+  .text-orange {
+    color: #ff6f00;
+  }
+  

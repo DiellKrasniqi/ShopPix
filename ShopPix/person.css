@@ -1,0 +1,15 @@
+@import url(Common.css);
+.text-orange {
+    color: #f76c0f;
+  }
+  .btn-outline-primary {
+    border-color: #f76c0f;
+    color: #f76c0f;
+  }
+  .btn-outline-primary:hover {
+    background-color: #f76c0f;
+    color: #fff;
+  }
+  .card {
+    border-radius: 16px;
+  }

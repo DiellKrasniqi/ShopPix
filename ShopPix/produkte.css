@@ -1,0 +1,106 @@
+@import url(Common.css);
+.products-section {
+    background-color: #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+ 
+  
+  .category-list li a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .category-list li a:hover {
+    color: #ff6f00;
+    font-weight: 600;
+  }
+  
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+    background-color: #fff;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    background-color: #fff;
+    border-radius: 12px;
+  }
+
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #dc3545;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 10;
+  }
+
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+ 
+  .product-image {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ff6f00;
+  }
+  
+ 
+  
+  
+  
+  
+  .product-card {
+    border: 1px solid #ddd;  
+    border-radius: 10px;     
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;  
+  }
+  
+ 
+  .product-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .fade-out {
+    animation: fadeOut 0.5s ease forwards;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  .row{
+    justify-content: center;
+  }
